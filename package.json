@@ -1,0 +1,24 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "browserify ./src/js/app.js -o ./public/bundle.js",
+    "minify": "uglifyjs ./public/bundle.js -o ./public/bundle.min.js -c -m",
+    "deploy": "gh-pages -d public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "moment": "^2.21.0"
+  },
+  "devDependencies": {
+    "browserify": "^16.1.1",
+    "gh-pages": "^1.1.0",
+    "uglify-js": "^3.3.16"
+  }
+}
